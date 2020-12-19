@@ -1,0 +1,9 @@
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+@media (max-width: 768px){
+    .copyright {
+        font-size: 8px;
+    }
+}

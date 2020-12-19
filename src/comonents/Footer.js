@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Footer.css"
 const Footer = () => {
     const container={
         width : "100%",
@@ -12,7 +13,6 @@ const Footer = () => {
         color: "white",
         //width: "70%",
         //backgroundColor: "white",
-
     }
     const social={
         display: "flex",
