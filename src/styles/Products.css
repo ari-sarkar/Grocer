@@ -1,0 +1,74 @@
+section{
+    position: relative;
+}
+#products {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    background-color: #ffff;
+    margin-top: 3rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ h2 {
+    position: absolute;
+    top: -8%;
+    left: 0;
+    font-size: 38px;
+    color: white;
+}
+.proudcts-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.addToCart {
+    width: 15rem;
+    height: 3rem;
+    background-color: coral;
+    color: #ffff;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+.addToCart:hover {
+    background-color: rgb(241, 83, 26);
+}
+/*************************************    CSS MEDIA QUERIES*****************************************/
+@media (max-width:768px){
+    #products {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0.5rem;
+        position: relative;
+    }
+    #products h2 {
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        font-size: 38px;
+        color: rgb(51, 48, 48);
+    }
+    .proudcts-container {
+        height: 100%;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+}
+/*******************************************************************************************************/

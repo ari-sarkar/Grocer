@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+}
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #ffff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 35px;
+  margin-left: 4.5rem;
+  color: red;
+}
+.left-header {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.right-header {
+  width: 50%;
+  height: 5rem;
+}
+.right-header ul {
+  display: flex;
+  height: 5rem;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.right-header ul li {
+  font-size: 20px;
+  padding: 10px;
+}
+.right-header ul a {
+  color: rgba(98, 88, 88, 1);
+  text-decoration: none;
+}
+.navigation-menu li {
+  font-size: 18px;
+  transition: font-size 0.5s;
+}
+.navigation-menu li:hover{
+  color: rgb(65, 64, 64);
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 6rem;
+  }
+  .left-header {
+    width: 100%;
+    display: block;
+    align-items: center;
+  }
+  .right-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+  }
+  .close {
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+  }
+  .open {
+    transform: translateX(0%);
+    transition: transform 1s ease;
+  }
+  .right-header ul {
+    height: 30%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .right-header ul a {
+    width: 100%;
+    width: 100%;
+    margin: 0.5rem;
+  }
+  .hamburger {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    cursor: pointer;
+  }
+  .line {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+  }
+  .backdrop {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .unhide {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+}
